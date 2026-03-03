@@ -30,8 +30,8 @@
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background: #FDF9F4;
-      color: #3A3A3A;
+      background: #F8F6F2;
+      color: #2E2E2E;
       text-align: center;
       overflow-x: hidden;
     }
@@ -40,7 +40,7 @@
       font-family: 'Parisienne', cursive;
       margin: 15px 0;
       line-height: 1.2;
-      color: #E6A84E;
+      color: #2F8F9D;
     }
     h2 { font-size: 3em; }
     h3 { font-size: 2.2em; }
@@ -99,14 +99,14 @@
 
     /* Countdown */
     .countdown-section {
-      background: #F2E6DA;
+      background: #FC4783;
       padding: 50px 20px;
     }
     .countdown-title {
       font-family: 'Parisienne', cursive;
       font-size: 2.5em;
       margin-bottom: 20px;
-      color: #E6A84E;
+      color: #fff;
     }
     .countdown {
       display: flex;
@@ -120,7 +120,7 @@
       border-radius: 12px;
       font-size: 20px;
       font-weight: bold;
-      color: #3A3A3A;
+      color: #2E2E2E;
       min-width: 70px;
       display: flex;
       flex-direction: column;
@@ -131,7 +131,7 @@
       font-size: 12px;
       margin-top: 5px;
       font-weight: normal;
-      color: #3A3A3A;
+      color: #2E2E2E;
     }
 
     /* Iconos animados (latido) */
@@ -142,7 +142,10 @@
       display: block;
     }
     img[src="images/icono-fiesta.svg"] {
-      filter: brightness(0) saturate(100%) invert(69%) sepia(14%) saturate(364%) hue-rotate(104deg) brightness(93%) contrast(88%);
+      filter: brightness(0) saturate(100%) invert(63%) sepia(73%) saturate(3059%) hue-rotate(321deg) brightness(102%) contrast(101%);
+    }
+    img[src="images/icono-canciones.svg"] {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7492%) hue-rotate(11deg) brightness(104%) contrast(100%);
     }
     @keyframes pulse {
       0%,100%{ transform: scale(1); }
@@ -172,14 +175,14 @@
       display: inline-block;
       margin-top: 20px;
       padding: 12px 25px;
-      background: #3A3A3A;
+      background: #2F8F9D;
       color: #fff;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
       transition: all 0.3s;
     }
-    .btn:hover { background: #E6A84E; }
+    .btn:hover { background: #FF6F61; }
 
     /* Modal */
     .modal {
@@ -199,11 +202,16 @@
 
     /* Secciones verdes */
     .green-section {
-      background: #8FAF9F;
+      background: #5FBBC8;
       color: #fff;
     }
-    .green-section h2,
+    .green-section h2 {
+      color: #fff;
+    }
     #instagram h2 {
+      color: #fff;
+    }
+    section[style="background:#FC4783;"] h2 {
       color: #fff;
     }
 
@@ -226,10 +234,9 @@
       z-index: 999;
       animation: pulse 1.8s ease-in-out infinite;
       transition: filter 0.3s;
-      filter: brightness(0) saturate(100%) invert(69%) sepia(14%) saturate(364%) hue-rotate(104deg) brightness(93%) contrast(88%);
     }
     #music-btn.playing {
-      filter: brightness(1.5) drop-shadow(0 0 10px #F4A261);
+      filter: brightness(1.2);
     }
 
     /* Responsive */
@@ -292,7 +299,7 @@
 </section>
 
 <!-- Confirmación -->
-<section style="background:#F2E6DA;">
+<section style="background:#FC4783;">
   <h2>Confirmación de Asistencia</h2>
   <p>Cuento con tu presencia.<br>¡Confirmá tu asistencia antes del 20/03/26!</p>
   <a href="https://forms.gle/KoJ2D5vWjPkszsXc7" target="_blank" class="btn">Confirmar asistencia</a>
@@ -314,7 +321,7 @@
 </section>
 
 <!-- Música -->
-<section style="background:#F2E6DA;">
+<section style="background:#FC4783;">
   <img src="images/icono-canciones.svg" alt="Canciones" class="icon">
   <h2>¡Ayudame a elegir la música!</h2>
   <p>Podés sugerir tus canciones favoritas para la fiesta.</p>
@@ -343,7 +350,7 @@
 </section>
 
 <!-- Gracias -->
-<section style="background:#F2E6DA;">
+<section style="background:#FC4783;">
   <h2>Gracias por acompañarme</h2>
 </section>
 
