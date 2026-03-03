@@ -141,6 +141,9 @@
       animation: pulse 1.8s ease-in-out infinite;
       display: block;
     }
+    img[src="images/icono-fiesta.svg"] {
+      filter: brightness(0) saturate(100%) invert(69%) sepia(14%) saturate(364%) hue-rotate(104deg) brightness(93%) contrast(88%);
+    }
     @keyframes pulse {
       0%,100%{ transform: scale(1); }
       50%{ transform: scale(1.15); }
@@ -199,6 +202,10 @@
       background: #8FAF9F;
       color: #fff;
     }
+    .green-section h2,
+    #instagram h2 {
+      color: #fff;
+    }
 
     /* Instagram */
     #instagram {
@@ -219,6 +226,7 @@
       z-index: 999;
       animation: pulse 1.8s ease-in-out infinite;
       transition: filter 0.3s;
+      filter: brightness(0) saturate(100%) invert(69%) sepia(14%) saturate(364%) hue-rotate(104deg) brightness(93%) contrast(88%);
     }
     #music-btn.playing {
       filter: brightness(1.5) drop-shadow(0 0 10px #F4A261);
