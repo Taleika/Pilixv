@@ -92,6 +92,11 @@
       padding: 100px 20px;
       overflow: hidden;
     }
+    header.parallax {
+      padding: 0;
+      box-sizing: border-box;
+      max-width: 100%;
+    }
 
     section {
       padding: 50px 20px;
@@ -211,7 +216,13 @@
     #instagram h2 {
       color: #fff;
     }
+    #instagram .icon {
+      display: none;
+    }
     section[style="background:#FC4783;"] h2 {
+      color: #fff;
+    }
+    section[style="background:#FC4783;"] p {
       color: #fff;
     }
 
@@ -315,7 +326,7 @@
 <!-- Instagram -->
 <section id="instagram" class="parallax" style="background-image:url('images/imagenig.jpg');">
   <img src="images/icono-instagram.svg" alt="Instagram" class="icon">
-  <h2>@piliabaca</h2>
+  <h2><a href="https://www.instagram.com/piliabaca/" target="_blank" style="color:inherit; text-decoration:none;">@piliabaca</a></h2>
   <p>¡Preparate para esta gran fiesta!<br>
   Seguime en mi cuenta de Instagram y etiquetame en tus fotos y videos.</p>
 </section>
